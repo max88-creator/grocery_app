@@ -12,6 +12,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.max_grank.groceryapp.splash_screen.Splash1_1
+import com.max_grank.groceryapp.splash_screen.Splash1_2
+import com.max_grank.groceryapp.splash_screen.Splash1_3
 import com.max_grank.groceryapp.ui.theme.GroceryAppTheme
 
 class MainActivity : ComponentActivity() {
@@ -20,7 +22,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             GroceryAppTheme {
-                Splash1_1()
+                Splash1_3()
             }
         }
     }
