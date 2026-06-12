@@ -1,17 +1,20 @@
-package com.max_grank.groceryapp.splash_screen
+package com.max_grank.groceryapp.splash_screen.splash2
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -19,50 +22,64 @@ import com.max_grank.groceryapp.R
 import com.max_grank.groceryapp.utils.NavigationButton
 import com.max_grank.groceryapp.utils.NavigationDot
 
-//Start 23:15
-//Finish 23:31
+//Start 16:38
+//Finish 17:24
 @Composable
 @Preview(showBackground = true)
-fun Splash1_3() {
+fun Splash2_1() {
     Box(
         modifier = Modifier
             .fillMaxSize()
+            .background(Color.White)
     ) {
-        Box()
-        {
+        Box(
+            modifier = Modifier
+                .offset(x = (-3).dp, y = (-98).dp)
+
+        ) {
             Image(
                 painter = painterResource(
-                    R.drawable.mask_group3
+                    R.drawable.element5
                 ),
-                contentDescription = "mask group",
+                contentDescription = "element5",
                 modifier = Modifier
-                    .fillMaxSize()
+                    .width(417.dp)
+                    .height(619.dp)
             )
         }
         Box(
             modifier = Modifier
-                .padding(top = 96.dp)
+                .padding(top = 412.dp)
+        ) {
+            Image(
+                painter = painterResource(R.drawable.vector5),
+                contentDescription = "vector5",
+                modifier = Modifier
+                    .width(414.dp)
+                    .height(425.dp)
+            )
+        }
+        Box(
+            modifier = Modifier
+                .padding(top = 517.dp)
                 .align(Alignment.TopCenter)
         ) {
             Image(
-                painter = painterResource(
-                    R.drawable.buy_premium_fruits
-                ),
-                contentDescription = "buy_premium_fruits",
+                painter = painterResource(R.drawable.premium_food_at_your_doorstep),
+                contentDescription = "premium_food_at_your_doorstep",
                 modifier = Modifier
-                    .width(219.dp)
+                    .width(274.dp)
                     .height(78.dp)
             )
         }
         Box(
             modifier = Modifier
-                .padding(top = 203.dp, start = 47.dp)
+                .padding(top = 623.dp)
+                .align(Alignment.TopCenter)
         ) {
             Image(
-                painter = painterResource(
-                    R.drawable.paragraph3
-                ),
-                contentDescription = "paragraph3",
+                painter = painterResource(R.drawable.paragraph5),
+                contentDescription = "paragraph5",
                 modifier = Modifier
                     .width(320.dp)
                     .height(46.dp)
@@ -77,15 +94,15 @@ fun Splash1_3() {
                     .padding(top = 700.dp, start = 166.dp)
             ) {
                 NavigationDot(
-                    isSelected = false
-                )
-                Spacer(modifier = Modifier.width(4.dp))
-                NavigationDot(
-                    isSelected = false
-                )
-                Spacer(modifier = Modifier.width(4.dp))
-                NavigationDot(
                     isSelected = true
+                )
+                Spacer(modifier = Modifier.width(4.dp))
+                NavigationDot(
+                    isSelected = false
+                )
+                Spacer(modifier = Modifier.width(4.dp))
+                NavigationDot(
+                    isSelected = false
                 )
                 Spacer(modifier = Modifier.width(4.dp))
                 NavigationDot(

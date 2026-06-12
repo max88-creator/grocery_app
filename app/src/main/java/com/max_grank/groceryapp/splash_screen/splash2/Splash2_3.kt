@@ -1,4 +1,4 @@
-package com.max_grank.groceryapp.splash_screen
+package com.max_grank.groceryapp.splash_screen.splash2
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
@@ -6,79 +6,78 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.em
-import androidx.compose.ui.unit.sp
+import androidx.room.util.TableInfo
 import com.max_grank.groceryapp.R
 import com.max_grank.groceryapp.utils.NavigationButton
 import com.max_grank.groceryapp.utils.NavigationDot
 
-//Start 21:22
-//End 22:42
+//Start 18:23
+//Finish 18:53
 @Composable
 @Preview(showBackground = true)
-fun Splash1_1() {
+fun Splash2_3() {
     Box(
         modifier = Modifier
             .fillMaxSize()
     ) {
-        Box()
-         {
+        Box(
+            modifier = Modifier
+                .offset(x = (-4).dp, y = (-23).dp)
+        ) {
             Image(
-                painter = painterResource(
-                    R.drawable.maskgroup
-                ),
-                contentDescription = "mask group",
+                painter = painterResource(R.drawable.element7),
+                contentDescription = "element7",
                 modifier = Modifier
-                    .fillMaxSize()
+                    .width(417.dp)
+                    .height(619.dp)
             )
         }
         Box(
             modifier = Modifier
-                .padding(top = 96.dp)
-                .align(Alignment.TopCenter)
-        ) {
-            Text(
-                text = "Welcome to",
-                fontSize = 30.sp,
-                fontWeight = FontWeight(700),
-                lineHeight = 1.3.em,
-                letterSpacing = 0.03.em,
-            )
-        }
-        Box(
-            modifier = Modifier
-                .padding(top = 136.dp)
+                .padding(top = 471.dp)
         ) {
             Image(
-                painter = painterResource(
-                    R.drawable.big_cart
-                ),
-                contentDescription = "big_cart",
+                painter = painterResource(R.drawable.vector5),
+                contentDescription = "vector5",
                 modifier = Modifier
-                    .width(127.dp)
-                    .height(50.dp)
+                    .width(414.dp)
+                    .height(425.dp)
             )
         }
-        Box(
+        Column(
             modifier = Modifier
-                .padding(top = 203.dp, start = 47.dp)
+                .fillMaxWidth()
+                .padding(top = 536.dp),
+            horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Image(
-                painter = painterResource(
-                    R.drawable.paragraph1
-                ),
-                contentDescription = "paragraph1",
+                painter = painterResource(R.drawable.buy_dairy_products),
+                contentDescription = "buy_dairy_products",
+                modifier = Modifier
+                    .width(240.dp)
+                    .height(78.dp)
+            )
+        }
+        Column(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(top = 643.dp),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            Image(
+                painter = painterResource(R.drawable.paragraph7),
+                contentDescription = "paragraph7",
                 modifier = Modifier
                     .width(320.dp)
                     .height(46.dp)
@@ -90,7 +89,7 @@ fun Splash1_1() {
         ) {
             Row(
                 modifier = Modifier
-                    .padding(top = 700.dp, start = 166.dp)
+                    .padding(top = 720.dp, start = 166.dp)
             ) {
                 NavigationDot(
                     isSelected = true
@@ -108,7 +107,7 @@ fun Splash1_1() {
                     isSelected = false
                 )
             }
-            Spacer(modifier = Modifier.height(40.dp))
+            Spacer(modifier = Modifier.height(20.dp))
             NavigationButton()
         }
     }
