@@ -12,6 +12,8 @@ import com.max_grank.groceryapp.splash_screen.splash1.Splash1_4
 import com.max_grank.groceryapp.splash_screen.splash2.Splash2_1
 import com.max_grank.groceryapp.splash_screen.splash2.Splash2_2
 import com.max_grank.groceryapp.splash_screen.splash2.Splash2_3
+import com.max_grank.groceryapp.splash_screen.splash2.Splash2_4
+import com.max_grank.groceryapp.splash_screen.splash3.Splash3_1
 import com.max_grank.groceryapp.ui.theme.GroceryAppTheme
 
 class MainActivity : ComponentActivity() {
@@ -20,7 +22,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             GroceryAppTheme {
-                Splash2_3()
+                Splash3_1()
             }
         }
     }
